@@ -1,7 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kadnikov Victor CV</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Victor, cv, resume">
+    <meta name="description" content="Это сайт - резюме Виктора Кадникова">
+
+    <title>resume Кадников</title>
 </head>
 <body>
     <img src="Victor2.jpg" width="180" alt="Сдесь должна быть моя фотография"/>
@@ -15,10 +21,17 @@
     <hr>
 
     <h2>Мои социальные сети</h2>
-    
-    <ul>
-        <li><a href="https://vk.com/id12587869" target="_blank">Мой VK</a></li>
-    </ul>
+
+    <nav>
+        
+        <a href="https://vk.com/id12587869" target="_blank">Мой VK</a>
+            |
+        <a href="https://t.me/KadVic" target="_blank">Tegram</a>
+            |
+        <a href="https://www.youtube.com/channel/UCtfAY4GM1ysopfRrH4BWy7A" target="_blank">YouTube</a>    
+           
+        
+    </nav>
 
     <h2>Мои хобби</h2>
     
@@ -30,9 +43,43 @@
 
     <h2>Опыт работы</h2>
 
-    <ol>
-        <li>Учитель 2016-2022 гг.</li>
-        
-    </ol>
+    <table>
+        <thead>
+            <tr>
+                <th>Место работы</th>
+                <th>Годы</th>
+                <th>Должность</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Школа </td>
+                <td>2016-2022</td>
+                <td>Учитель </td>
+            </tr>
+        </tbody>
+    </table>
+
+   
+        <h1>Связаться со мной</h1>
+
+        <label for="1">Ваше имя</label>
+        <input type="text" name="1"
+        placeholder="Введите ваше имя">
+
+        <br>
+
+        <label for="2">Введите вашу почту</label>
+        <input type="email" name="2"
+        placeholder="Введите ваше имя">
+
+        <div>
+            <label for="massage">Ваше сообщение</label>
+            <br>
+            <textarea name="Сообщение" id="massage" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+        </div>
+
+        <button tabe="submit"> Отправить!</button>
+    
 </body>
 </html>
