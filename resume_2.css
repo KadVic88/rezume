@@ -153,6 +153,9 @@ a:active {
     text-align: center;
   }
   
+   .info-text {
+    margin-left: 0px;
+   }
   
   .form-row label,
   .form-row input {
