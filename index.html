@@ -1,85 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Victor, cv, resume">
-    <meta name="description" content="Это сайт - резюме Виктора Кадникова">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Resume, VR, Kadnikov">
+  <meta name="description" content="Резуме - сайт Frontend-developer Kadnikov Victor">
+  <title>Kadnokov Resume</title>
 
-    <title>resume Кадников</title>
+  <link rel="stylesheet" href="resume_2.css">
 </head>
-<body>
-    <img src="Victor2.jpg" width="180" alt="Сдесь должна быть моя фотография"/>
-    <h1>Виктор Кадников</h1>
+  <body>
+  
+    <div class="conteiner">
+      <div class="info">
+        <img src="Victor2.jpg" alt="Фото Виктора Кадникова" class="avatar">
 
-    <p><em> Я учусь программированию</em></p>
+        <div class="info-text">
+          <h1>Виктор Кадников</h1>
+          
+          <P>Я хочу стать <strong>программистом и сменить профессию</strong></P>
 
-    <p>Люблю заниматься спортом в особенности <strong>волейболом</strong>
-    </p>
+          <p>Люблю спорт, особенно <strong><em>волейбол</em></strong></p>
+      
+          <h3>Социальные сети</h3>
 
-    <hr>
+          <a href="https://t.me/KadVic" target="_blank">Telegram</a>
+          |
+          <a href="https://vk.com/id12587869" target="_blank">VK</a>
+          |
+          <a href="https://www.youtube.com/channel/UCtfAY4GM1ysopfRrH4BWy7A" target="_blank">YouTube</a>
+        </div>
+      </div>
 
-    <h2>Мои социальные сети</h2>
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
 
-    <nav>
-        
-        <a href="https://vk.com/id12587869" target="_blank">Мой VK</a>
-            |
-        <a href="https://t.me/KadVic" target="_blank">Tegram</a>
-            |
-        <a href="https://www.youtube.com/channel/UCtfAY4GM1ysopfRrH4BWy7A" target="_blank">YouTube</a>    
-           
-        
-    </nav>
+        <Ol>
+          <li>Программирование</li>
+          <li>Изучение английского</li>
+          <li>Волейбол</li>
+          <li>Чтение</li>
+        </Ol>
+      </div> 
 
-    <h2>Мои хобби</h2>
-    
-    <ol>
-        <li>Чтение</li>
-        <li>Пешии прогулки</li>
-        <li>Программирование</li>
-    </ol>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
 
-    <h2>Опыт работы</h2>
-
-    <table>
-        <thead>
+        <table class="tabel">
+          <thead>
             <tr>
-                <th>Место работы</th>
-                <th>Годы</th>
-                <th>Должность</th>
+              <th>Место работы</th>
+              <th>Годы</th>
+              <th>Должность</th>
             </tr>
-        </thead>
-        <tbody>
+          </thead>
+          <tbody>
             <tr>
-                <td>Школа </td>
-                <td>2016-2022</td>
-                <td>Учитель </td>
+              <td>Школа</td>
+              <td>2016 - сейчас</td>
+              <td>Учитель</td>
             </tr>
-        </tbody>
-    </table>
+          </tbody>
+        </table>
+      </div>  
+      
+      <form action="" class="form"> 
 
-   
-        <h1>Связаться со мной</h1>
+        <h2>Связаться со мной</h2>
 
-        <label for="1">Ваше имя</label>
-        <input type="text" name="1"
-        placeholder="Введите ваше имя">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="text">Ваше имя</label>
+            <input type="text" name="text" placeholder="Name?" >
+          </div>
 
-        <br>
-
-        <label for="2">Введите вашу почту</label>
-        <input type="email" name="2"
-        placeholder="Введите ваше имя">
-
-        <div>
-            <label for="massage">Ваше сообщение</label>
-            <br>
-            <textarea name="Сообщение" id="massage" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+          <div class="form-group" >
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Почта">
+          </div>
         </div>
 
-        <button tabe="submit"> Отправить!</button>
-    
-</body>
+        <div class="form-group">
+          <label for="massage">Ваше сообщение</label>
+          <textarea name="Сообщение" id="massage" cols="25" rows="5" placeholder="Введите текст..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Отправить!</button>
+
+
+      </form>
+    </div>
+  </body>
 </html>
